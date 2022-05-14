@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "ffb6bf71-f2a3-4647-ba8f-e159ac772085",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Showproduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/Show/:number",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"Show",
+						":number"
+					],
+					"variable": [
+						{
+							"key": "number",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterGender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/filtergender/:Gender",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"filtergender",
+						":Gender"
+					],
+					"variable": [
+						{
+							"key": "Gender",
+							"value": "ชาย"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtersize",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/filtersize/:size",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"filtersize",
+						":size"
+					],
+					"variable": [
+						{
+							"key": "size",
+							"value": "XL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orderqty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "OrderID",
+							"value": "5",
+							"type": "default"
+						},
+						{
+							"key": "categoryID",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "qty",
+							"value": "5",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/orderqty",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orderqty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "address",
+							"value": "222 อ.เมือง จ.ขอนแก่น",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/address",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterPaidDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/paid/:start/:end",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"paid",
+						":start",
+						":end"
+					],
+					"variable": [
+						{
+							"key": "start",
+							"value": "2022-05-13"
+						},
+						{
+							"key": "end",
+							"value": "2022-05-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterStatus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{url}}/status/:status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"status",
+						":status"
+					],
+					"variable": [
+						{
+							"key": "status",
+							"value": "notPaid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showorder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/ShowOrder/:number",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"ShowOrder",
+						":number"
+					],
+					"variable": [
+						{
+							"key": "number",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
